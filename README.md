@@ -1,5 +1,7 @@
 # Bootiq Installer
 
+**Current stable release:** [1.0.1](https://github.com/Bootiga-SaaS/bootiq-installer/releases/tag/1.0.1)
+
 Bootiq Installer connects the theme, storefront blocks, dependencies, and configuration supplied by the [Bootiq storefront package](https://github.com/Bootiga-SaaS/bootiq).
 
 It enables required modules, installs Bootiq as the default frontend theme, imports storefront configuration, places navigation and footer blocks, and configures editable Layout Builder sections. It does not create products, articles, stores, users, or other demo content.

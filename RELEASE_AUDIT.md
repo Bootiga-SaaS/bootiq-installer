@@ -1,15 +1,15 @@
-# Bootiq 1.0.0 Release Audit
+# Bootiq 1.0.1 Release Audit
 
 Date: 2026-06-21
 
 ## Scope
 
-The audited source is the Bootiq 1.0.0 package. It contains the Bootiq metapackage, theme, product-block module, and installer. No products, articles, users, stores, SaaS settings, legal content, or payment credentials are shipped.
+The audited source is the Bootiq 1.0.1 package. It contains the Bootiq metapackage, theme, product-block module, and installer. No products, articles, users, stores, SaaS settings, legal content, or payment credentials are shipped.
 Logo/favicon administration and Store Appearance presets were intentionally excluded because they are Bootiga SaaS features rather than requirements of the standalone storefront.
 
 ## Clean installation
 
-Bootiq was installed from copied Composer path packages on a fresh Commerce Kickstart 5.1 demo running Drupal 11.3.9, PHP 8.3.31, and Commerce 3.
+Bootiq 1.0.0 was first installed from mirrored Composer path packages on a fresh Commerce Kickstart 5.1 demo. Bootiq 1.0.1 was then installed from the public GitHub repositories and validated on bootiq-test running Drupal 11.3.12 and Commerce 3.
 
 The validation installation used:
 
@@ -19,8 +19,8 @@ drush en bootiq_installer -y
 drush bootiq:install --force
 ```
 
-Composer mirrored the packages into the target project; no symlinks to the development source were used.
-The final local repository test resolved all four packages as `1.0.0` through explicit path-repository version mappings. The metapackage does not lower the target projects minimum stability.
+Composer mirrored the initial packages into the target project; no symlinks to the development source were used.
+The final public-repository test resolved all four packages as `1.0.1` from GitHub. The metapackage does not lower the target projects minimum stability.
 
 ## Results
 
@@ -47,4 +47,4 @@ The upstream Kickstart demo recipe required an unlimited PHP CLI memory limit in
 
 ## Release decision
 
-Bootiq 1.0.0 is ready to package and publish. Public release should use Git tags for versions and separate Composer repositories for the metapackage, theme, product-block module, and installer.
+Bootiq 1.0.1 is published and ready for Packagist registration. The public release uses Git tags and separate Composer repositories for the metapackage, theme, product-block module, and installer.
