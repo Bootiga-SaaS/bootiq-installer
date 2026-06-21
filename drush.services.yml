@@ -1,0 +1,9 @@
+services:
+  bootiq_installer.commands:
+    class: Drupal\bootiq_installer\Commands\BootiqInstallerCommands
+    arguments:
+      - '@config.factory'
+      - '@extension.list.module'
+      - '@theme_installer'
+    tags:
+      - { name: drush.command }

@@ -1,0 +1,17 @@
+name: 'Bootiq installer'
+type: module
+description: 'Installs the Bootiq storefront theme and base configuration.'
+package: Bootiq
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:block
+  - drupal:layout_builder
+  - bootstrap_layout_builder:bootstrap_layout_builder
+  - layout_builder_restrictions:layout_builder_restrictions
+  - better_exposed_filters:better_exposed_filters
+  - search_api:search_api
+  - drupal:menu_ui
+  - commerce:commerce
+  - commerce:commerce_cart
+  - commerce:commerce_product
+  - bootiq_product_blocks:bootiq_product_blocks

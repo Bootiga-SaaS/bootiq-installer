@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for Bootiq installer.
+ */
+
+/**
+ * Installs Bootiq as the default storefront theme.
+ */
+function bootiq_installer_install(): void {
+  \Drupal::service('theme_installer')->install(['bootiq']);
+  \Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('default', 'bootiq')
+    ->save(TRUE);
+}

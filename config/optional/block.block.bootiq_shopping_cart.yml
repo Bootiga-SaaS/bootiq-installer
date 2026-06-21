@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - system
+  theme:
+    - bootiq
+id: bootiq_shopping_cart
+theme: bootiq
+region: header
+weight: -6
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  label_display: '0'
+  provider: commerce_cart
+  dropdown: true
+  show_if_empty: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: /cart
