@@ -14,5 +14,16 @@
   },
   "extra": {
     "installer-name": "bootiq_installer"
+  },
+  "homepage": "https://www.bootiga.com",
+  "authors": [
+    {
+      "name": "Bootiga",
+      "homepage": "https://www.bootiga.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Bootiga-SaaS/bootiq-installer/issues",
+    "source": "https://github.com/Bootiga-SaaS/bootiq-installer"
   }
 }
